@@ -1,0 +1,13 @@
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\bin\Debug\netcoreapp3.1\FacultyClassManagementSystem.exe
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\bin\Debug\netcoreapp3.1\FacultyClassManagementSystem.deps.json
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\bin\Debug\netcoreapp3.1\FacultyClassManagementSystem.runtimeconfig.json
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\bin\Debug\netcoreapp3.1\FacultyClassManagementSystem.runtimeconfig.dev.json
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\bin\Debug\netcoreapp3.1\FacultyClassManagementSystem.dll
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\bin\Debug\netcoreapp3.1\FacultyClassManagementSystem.pdb
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.csprojAssemblyReference.cache
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.AssemblyInfoInputs.cache
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.AssemblyInfo.cs
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.dll
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.pdb
+C:\Users\(DARKCALL HACKING)\source\repos\FacultyClassManagementSystem\FacultyClassManagementSystem\obj\Debug\netcoreapp3.1\FacultyClassManagementSystem.genruntimeconfig.cache
