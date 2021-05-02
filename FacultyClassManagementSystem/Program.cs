@@ -1,11 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FacultyClassManagementSystem
 {
     class Program
     {
+        static void DisplayElements()
+        {
+            Console.WriteLine("\n\n\t\t\t\t\t\t------------------Faculty Class Management System------------------\n\n\t\t\t\t\t\t");
+            Console.WriteLine("\t\t\t\t\t\t\tWELCOME TO THE FACULTY CLASS MANAGEMENT SYSTEM!\n\n");
+            Console.WriteLine("\t\t\t\t\t\tTeaching is more than imparting knowlege, it is inspiring to change.\n\n" +
+                              "\t\t\t\t\t\tLearning is more than absorbing facts, it is acquiring understanding\n\n" +
+                              "\t\t\t\t\t\t\t\t\t\t\t\t-William Arthur Ward\n\n");
+        }
         static void Main(string[] args)
         {
+            DisplayElements();
+            DateandTime();
+
             string name = "\nJohn Mhark Ren\n";
             string name1 = "\nJohn Edward Gonzales\n";
             string name2 = "\nZaldy Manigbas\n";
@@ -23,33 +35,32 @@ namespace FacultyClassManagementSystem
             string position2 = "\nPart Time Employee\n";
             string schedule = "\nMonday\nTuesday\nWednesday\nThursday\nFriday\n";
             string schedule1 = "\nTuesday\nWednesday\nFriday\nSaturday\n";
-            string schedule2 = "\nMonday\n\nWednesday\nThursday\nSaturday\n";
+            string schedule2 = "\nMonday\nWednesday\nThursday\nSaturday\n";
 
-            Console.WriteLine("\n\n\n\t\t\t\t\t\t------------------Faculty Class Management System------------------\n\n\n\t\t\t\t\t\t");
             String user = "USERNAME";
-            String pw = "PASSWORD";
+            String pw = "123";
             String uinput, pwinput;
             int attempts = 0;
             do
             {
-                Console.WriteLine("USE ONLY CAPITAL LETTERS");
-                Console.WriteLine("Username: ");
+                Console.WriteLine("\n\nUSE ONLY CAPITAL LETTERS");
+                Console.WriteLine("\nUsername: ");
                 uinput = Console.ReadLine();
 
-                Console.WriteLine("Password: ");
+                Console.WriteLine("\nPassword: ");
                 pwinput = Console.ReadLine();
 
                 attempts++;
             } while (!uinput.Equals(user) && !pwinput.Equals(pw) && attempts != 2);
             if (uinput.Equals(user) && pwinput.Equals(pw))
             {
-                Console.WriteLine("Log In Successfully");
+                Console.WriteLine("\nLog In Successfully");
             }
             else if (uinput.Equals(user))
             {
                 do
                 {
-                    Console.WriteLine("Invalid password");
+                    Console.WriteLine("\nInvalid password");
                     Console.WriteLine("correct pw: ");
                     pwinput = Console.ReadLine();
 
@@ -68,7 +79,7 @@ namespace FacultyClassManagementSystem
             {
                 do
                 {
-                    Console.WriteLine("INvalid usernname");
+                    Console.WriteLine("Invalid usernname");
                     Console.WriteLine("username: ");
                     uinput = Console.ReadLine();
 
@@ -90,6 +101,7 @@ namespace FacultyClassManagementSystem
 
             string login = Console.ReadLine();
             Console.WriteLine("\n\n\n\t\t\t\t\t\t----------------------Teacher's List----------------------\n\n\n\t\t\t\t\t\t");
+
             Console.Write("\n\t\t\t\t1. John Mhark M. Ren");
             Console.Write("\n\t\t\t\t2. John Edward Gonzales");
             Console.Write("\n\t\t\t\t3. Zaly Manigbas");
@@ -144,6 +156,49 @@ namespace FacultyClassManagementSystem
                 default:
                     Console.WriteLine("Invalid");
                     break;
+            }
+            Console.WriteLine("\n\n\n\t\t\t\t\t\t---------------------------------------------------------------");
+            Console.WriteLine("\n\t\tDo you want to view the Summary of Absent of all Faculty Member?");
+            Console.WriteLine("\n\t\t01. Yes");
+            Console.WriteLine("\n\t\t02. No");
+            Console.Write("\n\nEnter the number of your choices: \n\n");
+            char optionSelected2 = Console.ReadLine()[1];
+            switch (optionSelected2)
+            {
+                case '1':
+                    Console.WriteLine("\nYes");
+                    Console.WriteLine("\n\t\t\t\t\t\t---------------------------------------------------------------");
+                    List<Class1> clss1 = new List<Class1>();
+                    clss1.Add(new Class1());
+                    clss1[0].Name = "\nJohn Mhark M. Ren";
+                    clss1[0].Absent = 3;
+                    clss1.Add(new Class1());
+                    clss1[1].Name = "\nJohn Edward Gonzales";
+                    clss1[1].Absent = 1;
+                    clss1.Add(new Class1());
+                    clss1[2].Name = "\nZaly Manigbas";
+                    clss1[2].Absent = 2;
+
+                    foreach (Class1 class1 in clss1)
+                    {
+                        Console.WriteLine(class1.getData());
+                    }
+                    Console.ReadLine();
+                    break;
+                case '0':
+                    Console.WriteLine("No");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+            static void DateandTime()
+            {
+                Console.WriteLine("\nCurrent Date and Time: \n");
+                DateTime dateTime = DateTime.Now;
+                Console.WriteLine(dateTime.ToString());
+
+                Console.ReadLine();
             }
         }
     }
