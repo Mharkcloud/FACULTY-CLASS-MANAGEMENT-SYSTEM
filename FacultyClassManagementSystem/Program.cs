@@ -98,6 +98,8 @@ namespace FacultyClassManagementSystem
             {
                 Console.WriteLine("Log In Incorrect");
             }
+            
+
 
             string login = Console.ReadLine();
             Console.WriteLine("\n\n\n\t\t\t\t\t\t----------------------Teacher's List----------------------\n\n\n\t\t\t\t\t\t");
