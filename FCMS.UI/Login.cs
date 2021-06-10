@@ -13,7 +13,6 @@ namespace FCMS.UI
             Console.WriteLine("\n\n\t\t\t\t\t----------------------WELCOME TO THE FACULTY CLASS MANAGEMENT SYSTEM----------------------\n\n");
             Console.WriteLine("\n\nEnter the number of your selected from the selection.\n\n");
             
-            Usrs users = new Usrs();
             var arrUsers = new Users[]
                 {
             new Users("D","E",1),
@@ -64,32 +63,21 @@ namespace FCMS.UI
                     goto Start;
                 }
                 Console.WriteLine("\n\n\n\t\t\t\t\t\t---------------------------------------------------------------");
-                Console.WriteLine("\n\t\tDo you want to view the Summary of Absent of all Faculty Member?");
+                Console.WriteLine("\n\t\tDo you want to view the List Name of all Faculty Member?");
                 Console.WriteLine("\n\t\t01. Yes");
                 Console.WriteLine("\n\t\t02. No");
                 Console.Write("\n\nEnter the number of your choices: \n\n");
-                char optionSelected = Console.ReadLine()[1];
-                switch (optionSelected)
+                Char optionSelected1 = Console.ReadLine()[1];
+                switch (optionSelected1)
                 {
                     case '1':
-                        Console.WriteLine("\nYes");
-                        Console.WriteLine("\n\t\t\t\t\t\t---------------------------------------------------------------");
-                        List<Summary> summaries = new List<Summary>();
-                        summaries.Add(new Summary());
-                        summaries[0].Name = "\nJohn Mhark M. Ren";
-                        summaries[0].Absent = 3;
-                        summaries.Add(new Summary());
-                        summaries[1].Name = "\nJohn Edward Gonzales";
-                        summaries[1].Absent = 1;
-                        summaries.Add(new Summary());
-                        summaries[2].Name = "\nZaly Manigbas";
-                        summaries[2].Absent = 2;
-
-                        foreach (Summary summary in summaries)
-                        {
-                            Console.WriteLine(summary.getData());
-                        }
-                        Console.ReadLine();
+                        Teachername myObj = new Teachername();
+                        myObj.Name = "\n\nLiam Martinez\n";
+                        myObj.Name1 = "Mhark Macasaet\n";
+                        myObj.Name2 = "Linda Cruz";
+                        Console.WriteLine(myObj.Name);
+                        Console.WriteLine(myObj.Name1);
+                        Console.WriteLine(myObj.Name2);
                         break;
                     case '2':
                         Console.WriteLine("No");
@@ -98,31 +86,24 @@ namespace FCMS.UI
                         Console.WriteLine("Invalid");
                         break;
                 }
-                        Console.WriteLine("\n\t\t\t\t\t\t---------------------------------------------------------------");
-                Console.WriteLine("\n\n\nDo you want to view the Teacher's List?\n\n\n");
+                Console.WriteLine("\n\n\n\t\t\t\t\t\t---------------------------------------------------------------");
+                Console.WriteLine("\n\t\tDo you want to view the Summary of Absent of all Faculty Member?");
                 Console.WriteLine("\n\t\t01. Yes");
                 Console.WriteLine("\n\t\t02. No");
                 Console.Write("\n\nEnter the number of your choices: \n\n");
-                char optionSelected1 = Console.ReadLine()[2];
-                Console.WriteLine("\n\n\n\t\t\t\t\t\t----------------------Teacher's List----------------------\n\n\n\t\t\t\t\t\t");
-                
-                switch (optionSelected1)
+                char optionSelected = Console.ReadLine()[1];
+                switch (optionSelected)
                 {
-                    case '2':
-                        Console.WriteLine("\nYes");
-                        Console.WriteLine("\n\t\t\t\t\t\t---------------------------------------------------------------");
-                        List<List> lists = new List<List>();
-                        lists[0].Name1 = "\nJohn Mhark M. Ren";
-                        lists[1].Name2 = "\nJohn Edward Gonzales";
-                        lists[2].Name3 = "\nZaly Manigbas";
-
-                        foreach (List list in lists)
-                        {
-                            Console.WriteLine(list.getData());
-                        }
-                        Console.ReadLine();
+                    case '1':
+                        Summaries myObj = new Summaries();
+                        myObj.Name = "\n\nLiam Martinez";
+                        myObj.Name1 = "Mhark Macasaet";
+                        myObj.Name2 = "Linda Cruz";
+                        Console.WriteLine(myObj.Name + " has 3 absent.\n");
+                        Console.WriteLine(myObj.Name1 + " has 2 absent.\n");
+                        Console.WriteLine(myObj.Name2 + " has 2 absent.\n");
                         break;
-                    case '3':
+                    case '2':
                         Console.WriteLine("No");
                         break;
                     default:
@@ -133,3 +114,6 @@ namespace FCMS.UI
         }
     }
 }
+// Tulad nga po mam last meeting pinaghiwalay ko na po yung mga classes. Dun po sa Users na class maam ang ginamit
+// ko po is field pa rin medyo nalilito ako parang dun ako nasanay then yung 2 classes ko is get and set na po ginawa ko.
+// pinag hiwalay hiwalay ko na rin po sila base single purposes nila salamat po.
